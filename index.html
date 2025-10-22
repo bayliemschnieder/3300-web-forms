@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Web Forms</h1>
+
+      <form action="#" method="POST"></form>
+      <div>
+        <label for="cust_id"> Customer ID:</label>
+        <input type="text" name="cust_id" id="cust_id" readonly />
+      </div>
+      <div>
+        <label for="fname"> First Name:</label>
+        <input
+          type="text"
+          name="first_name"
+          id="fname"
+          autofocus
+          required
+          autocomplete="given-name"
+        />
+      </div>
+      <div>
+        <label for="lname"> Last Name:</label>
+        <input
+          type="text"
+          name="last_name"
+          id="lname"
+          required
+          autocomplete="family-name"
+        />
+      </div>
+      <div>
+        <label for="age"> Age:</label>
+        <input type="text" name="age" id="age" size="3" required />
+      </div>
+      <div>
+        <label for="Telephone"> Telephone:</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          required
+          pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$"
+        />
+      </div>
+      <hr />
+      <h2>Address Information</h2>
+      <div>
+        <label for="State">State:</label>
+        <input type="text" name="state" id="state" required />
+      </div>
+      <div>
+        <label for="ice-cream">
+          Favorite flavor of ice cream:
+          <select name="ice-cream" id="ice-cream" required>
+            <option value="" selected>Choose one ...</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="swirl">Swirl</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" /> Female
+        </label>
+
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" /> Male
+        </label>
+
+        <label for="non-binary">
+          <input
+            type="radio"
+            id="non-binary"
+            name="gender"
+            value="non-binary"
+          />Non-binary
+        </label>
+      </div>
+      <div>
+        <label for="running">Running</label>
+        <input type="checkbox" id="running" name="activities" value ="running"> 
+        </label>    
+        <label for="biking">Biking</label>
+        <input type="checkbox" id="biking" name="activities" value="biking"> 
+        </label>
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="reading" name="activities" value="reading">
+        </label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="clear">Clear</button>
+      </div>
+    </main>
+  </body>
+</html>
